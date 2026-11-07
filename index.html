@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunita Thyagarajan</title>
+<meta name="description" content="Sunita Thyagarajan, Associate Teaching Professor of Chemistry at Johns Hopkins University. Interactive chemistry learning modules.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f7f9;
+  --surface:#ffffff;
+  --ink:#16202b;
+  --muted:#566373;
+  --line:#dde3ea;
+  --accent:#002d72;
+  --accent-ink:#ffffff;
+  --accent-soft:#e8eef8;
+  --shadow:0 1px 2px rgba(16,24,40,.04), 0 4px 16px rgba(16,24,40,.06);
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1319;
+    --surface:#151c24;
+    --ink:#e4e9ef;
+    --muted:#9aa7b5;
+    --line:#29343f;
+    --accent:#8fb3ff;
+    --accent-ink:#0e1319;
+    --accent-soft:#1b2635;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1319;
+  --surface:#151c24;
+  --ink:#e4e9ef;
+  --muted:#9aa7b5;
+  --line:#29343f;
+  --accent:#8fb3ff;
+  --accent-ink:#0e1319;
+  --accent-soft:#1b2635;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+}
+a{color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+
+/* Header */
+header{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+h1{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(2.1rem, 5vw, 2.9rem);
+  line-height:1.15;
+  margin:0 0 8px;
+  letter-spacing:-.01em;
+}
+.role{margin:0;color:var(--muted);font-size:1.05rem}
+.role strong{color:var(--ink);font-weight:500}
+
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0;padding:0;list-style:none}
+.links a{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 14px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--surface);
+  color:var(--ink);
+  text-decoration:none;
+  font-size:.92rem;font-weight:500;
+  transition:border-color .15s, color .15s;
+}
+.links a:hover,.links a:focus-visible{border-color:var(--accent);color:var(--accent)}
+.links svg{width:18px;height:18px;flex:none}
+
+/* Sections */
+section{padding:44px 0}
+h2{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:1.5rem;
+  margin:0 0 16px;
+}
+.about p{margin:0;max-width:68ch}
+
+/* Modules */
+.modules{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:8px}
+.card{
+  display:flex;flex-direction:column;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:22px 22px 20px;
+  box-shadow:var(--shadow);
+}
+.card h3{font-family:var(--serif);font-weight:600;font-size:1.2rem;line-height:1.3;margin:0 0 8px}
+.card p{margin:0 0 20px;color:var(--muted);font-size:.93rem;line-height:1.55;flex:1}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.btn{
+  display:inline-block;
+  padding:9px 16px;
+  border-radius:8px;
+  background:var(--accent);
+  color:var(--accent-ink);
+  text-decoration:none;
+  font-weight:600;font-size:.92rem;
+  transition:opacity .15s;
+}
+.btn:hover,.btn:focus-visible{opacity:.88}
+.src{font-size:.88rem;color:var(--muted);text-decoration:none}
+.src:hover,.src:focus-visible{color:var(--accent);text-decoration:underline}
+
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:.88rem}
+
+@media (max-width:520px){
+  header{padding:48px 0 32px}
+  section{padding:36px 0}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Sunita Thyagarajan</h1>
+    <p class="role"><strong>Associate Teaching Professor</strong> · Department of Chemistry, Johns Hopkins University</p>
+    <ul class="links">
+      <li>
+        <a href="https://chemistry.jhu.edu/directory/sunita-thyagarajan/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 5l9 5-9 5-9-5Z"/><path d="M7 12v4.5c0 1 2.2 2.5 5 2.5s5-1.5 5-2.5V12"/><path d="M21 10v5"/></svg>
+          JHU Faculty Profile
+        </a>
+      </li>
+      <li>
+        <a href="https://orcid.org/0000-0002-6772-2863" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#a6ce39"/><path fill="#fff" d="M8.2 17.3H6.8V7.4h1.4v9.9Zm2.1-9.9h3.8c3.6 0 5.2 2.6 5.2 5s-1.9 4.9-5.2 4.9h-3.8V7.4Zm1.4 8.6h2.2c3.2 0 3.9-2.4 3.9-3.6 0-2-1.3-3.7-4-3.7h-2.1V16ZM8.4 5.4a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0Z"/></svg>
+          ORCID
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/sunitathyagarajan" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p>I am an Associate Teaching Professor at Johns Hopkins University with a passion for teaching and developing new ways to teach content to students. I have developed several courses and now am working on integrating AI into the classroom. Below are some modules I have recently created.</p>
+    </div>
+  </section>
+
+  <section class="modules-section" style="padding-top:0">
+    <div class="wrap">
+      <h2>Interactive learning modules</h2>
+      <div class="modules">
+
+        <article class="card">
+          <h3>AAS and Standard Addition</h3>
+          <p>Atomic absorption spectroscopy: basic concepts, applications, comparison with UV-Vis and emission, interferences, line width, and solved standard-addition examples.</p>
+          <div class="actions">
+            <a class="btn" href="https://sunitathyagarajan.github.io/AAS-standard-addition/">Open module</a>
+            <a class="src" href="https://github.com/sunitathyagarajan/AAS-standard-addition" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Cyclic Voltammetry Primer</h3>
+          <p>A pre-lab module on electrochemistry: Nernst thermodynamics, reversible and irreversible electron transfer, scan-rate dependence, and a plot-based quiz.</p>
+          <div class="actions">
+            <a class="btn" href="https://sunitathyagarajan.github.io/cyclic-voltammetry/">Open module</a>
+            <a class="src" href="https://github.com/sunitathyagarajan/cyclic-voltammetry" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Cyclohexane Conformations</h3>
+          <p>Rotatable 3D chair and boat models, an animated ring flip with its energy diagram, A-values and 1,3-diaxial strain, and a conformer population calculator.</p>
+          <div class="actions">
+            <a class="btn" href="https://sunitathyagarajan.github.io/cyclohexane-conformations/">Open module</a>
+            <a class="src" href="https://github.com/sunitathyagarajan/cyclohexane-conformations" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Interactive Group Theory</h3>
+          <p>Lessons on molecular symmetry: point groups, character tables, normal modes, and IR and Raman selection rules.</p>
+          <div class="actions">
+            <a class="btn" href="https://sunitathyagarajan.github.io/interactive-group-theory/">Open module</a>
+            <a class="src" href="https://github.com/sunitathyagarajan/interactive-group-theory" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Sunita Thyagarajan · Johns Hopkins University</div>
+</footer>
+
+</body>
+</html>
